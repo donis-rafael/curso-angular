@@ -1,0 +1,27 @@
+<!--BOTONES DINAMICOS-->
+<!-- <div>
+    <button [class.disabled]="button_disabled" class="btn btn-danger" (click)="text_color = 'text-danger'">Color rojo</button>
+    <button [disabled]="button_disabled" class="btn btn-success mx-2" (click)="text_color = 'text-success'">Color verde</button>
+    <!-- otra forma de hacer lo mismo, se puede usar de forma dinámica, puede ser [class] o [ngClass] --
+    <button [class]="{
+        'disabled': button_disabled,
+        'btn': true,
+        'btn-primary': true
+    }" (click)="text_color = 'text-primary'">Color azul</button>
+</div>
+
+<p [class]="text_color">Texto que va a cambiar de color</p>
+
+<button class="btn btn-secondary" (click)="button_disabled = !button_disabled">
+    Activar/Desactivar
+</button>-->
+<div>
+    <button class="btn btn-primary" (click)="src = 'https://images.pexels.com/photos/15415634/pexels-photo-15415634.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load'">
+        imagen 1
+    </button>
+    <button class="btn btn-danger" (click)="src = 'https://images.pexels.com/photos/16468310/pexels-photo-16468310.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load'">
+        imagen 2
+    </button>
+</div>
+
+<img [src]="src" alt="">
