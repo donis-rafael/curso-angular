@@ -3,3 +3,25 @@
 <button class="btn btn-primary mt-2" (click)="mostrar_en_consola(name.value)">
     Mostrar en consola
 </button>
+
+<div class="alert alert-primary mt-4" *ngIf="openAlert; else mensaje">
+    <p>Se ha enviado un mensaje</p>
+    <button class="btn btn-danger" (click)="openAlert = false">
+        Quita Alerta
+    </button>
+    <button class="btn btn-warning mx-2" (click)="quitaAlerta()">
+        Quita Alerta v.2
+    </button>
+    <button class="btn btn-danger" (click)="limpiaNombre()">
+        Limpia texto
+    </button>
+    <button class="btn btn-warning mx-2" (click)="name.value = ''">
+        Limpia texto v.2
+    </button>
+</div>
+
+<ng-template #mensaje>
+    <div class="alert alert-danger mt-4">
+        Mensaje de prueba
+    </div>
+</ng-template>
