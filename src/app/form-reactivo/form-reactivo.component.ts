@@ -1,0 +1,43 @@
+import { Component } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+
+@Component({
+  selector: 'app-form-reactivo',
+  templateUrl: './form-reactivo.component.html',
+  styleUrls: ['./form-reactivo.component.css']
+})
+
+export class FormReactivoComponent {
+
+  constructor(private fb: FormBuilder){
+
+  }
+
+  get name(){
+    return this.formUser.get('name') as FormControl;
+  }
+
+  get email(){
+    return this.formUser.get('email') as FormControl;
+  }
+
+  // -- FORMA PASO A PASO
+  /*formUser = new FormGroup({
+    'name': new FormControl('', Validators.required),
+    'email': new FormControl('', [Validators.required, Validators.email])
+  });*/
+
+  // FORMA FormBuilder
+  formUser = this.fb.group({
+    'name': ['', Validators.required],
+    'email': ['', [Validators.required, Validators.email]]
+  });
+
+  procesar(){
+    console.log(this.formUser.value)
+  }
+
+  /*name = new FormControl('', Validators.required);
+  email = new FormControl('', [Validators.required, Validators.email]);*/
+
+}
