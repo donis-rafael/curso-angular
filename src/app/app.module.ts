@@ -11,6 +11,7 @@ import { FormPlantillaComponent } from './form-plantilla/form-plantilla.componen
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
+import { ChildrenComponent } from './children/children.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormReactivoComponent } from './form-reactivo/form-reactivo.component';
     BuclesComponent,
     SwitchComponent,
     FormPlantillaComponent,
-    FormReactivoComponent
+    FormReactivoComponent,
+    ChildrenComponent
   ],
   imports: [
     BrowserModule,
