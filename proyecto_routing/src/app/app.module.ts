@@ -2,18 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
-import { AboutComponent } from './about/about.component';
+import { AppRoutingModule } from './app-routing.module';
 
-import { RouterModule, Routes } from '@angular/router';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CoursesComponent } from './courses/courses.component';
-import { CoursesDetailComponent } from './courses-detail/courses-detail.component';
-import { ContactInfoComponent } from './contact-info/contact-info.component';
-import { ContactDetailsComponent } from './contact-details/contact-details.component';
-
-const routes: Routes = [
+/*const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
@@ -53,21 +44,15 @@ const routes: Routes = [
     path: '**',
     component: PageNotFoundComponent
   }
-];
+];*/
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    ContactComponent,
-    AboutComponent,
-    PageNotFoundComponent,
-    CoursesComponent,
-    CoursesDetailComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
