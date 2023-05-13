@@ -1,5 +1,5 @@
 <div class="container mt-4">
-    <h2>Componente padre: {{ title }}</h2>
+    <h1>Servicios</h1>
     <!--<app-contador></app-contador>
 
     <app-botones></app-botones>
@@ -14,9 +14,12 @@
 
     <app-form-reactivo></app-form-reactivo>-->
 
-    <input type="text" class="form-control mb-4" [(ngModel)]="title">
+    <!--input type="text" class="form-control mb-4" [(ngModel)]="title">
     <!-- el evento titleChange se creó en children.component ->
     <app-children [title]="title" (titleChange)="title = $event"></app-children>-->
-    <!-- otra forma más sencilla de hacerlo -->
-    <app-children [(title)]="title"></app-children>
+    <!-- otra forma más sencilla de hacerlo ->
+    <app-children [(title)]="title"></app-children>-->
+
+    <app-add-messages></app-add-messages>
+    <app-list-messages></app-list-messages>
 </div>
