@@ -1,3 +1,19 @@
+# Proyecto Básico de Angular
+
+# Rafael Morales
+
+Desarrollo de **frontend** en *Angular*
+
+## Descripción de proyecto
+Proyecto realizado como parte de un proceso de aprendizaje, este proyecto contiene funciones muy básicas de Angular, en la parte inferior hay una descripción de cómo iniciar en Angular, y la fuente de aprendizaje.
+
+******
+
+El código fuente se encuentra en la rama **dev** del repositorio: [Proyecto Básico de Angular](https://github.com/donis-rafael/curso-angular/tree/dev)
+
+******
+******
+
 # CursoAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
@@ -28,7 +44,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ******
 ******
+
 ## -- Información personal de aprendizaje
+
 ******
 ******
 
