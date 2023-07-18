@@ -51,6 +51,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ******
 
 ## Guía de aprendizaje
+
 Título | Enlace | Descripción
 ---|---|---
 *Curso aprende Angular desde cero* | https://www.youtube.com/watch?v=X0LVIKRwWBs&list=PLZ2ovOgdI-kWDh3jDh-GvgToRlVfwIUFw | Curso gratuito, es una lista de reproducción que contiene 29 clases sobre lo básico de Angular.
